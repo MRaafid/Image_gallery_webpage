@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
+html
+    {
+        font-family: 'Playfair Display SC', sans-serif;
+        min-height: 100vh;
+        background-color: dimgrey;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+body
+    {
+        margin: 0px !important;
+        background-color: whitesmoke;
+        border: 1px solid #ddd;
+    }
+nav
+    {
+        display: flex;
+        flex-direction: row;
+        background-color: #352F44;
+        justify-content: space-between;
+    }
+nav .logo
+    { 
+        display: flex;
+        align-items: center;
+    }
+nav .logo img
+    {
+        width: 56px;
+        height: 56px;
+        padding: 8px;
+        border-radius: 50%;
+    }
+nav .logo .title
+    {
+        color: antiquewhite;
+        font-size: 24px;
+        font-weight: bold;
+    }
+nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: flex-start;
+        padding-right: 40px;
+    }
+nav ul li
+    {
+        color: antiquewhite;
+        padding: 20px 40px;
+        background-color: #9E9FA5;
+    }
+nav ul li:hover
+    {
+        background-color: #61677A;
+    }    
+nav ul li.contact
+    {
+        background-color: #61677A;
+    }
+nav ul li a
+    {
+        color: antiquewhite;
+        text-decoration: none;
+    }
+@media all and (max-width: 800px)
+    {
+        nav
+            {
+                justify-content: flex-start;
+            }
+        nav ul
+            {
+                justify-content: space-between;
+                padding-right: 40px;
+            }
+    }
+@media all and (max-width: 600px)
+    {
+        nav
+            {
+            flex-direction: column;
+            align-items: center;
+            }
+        nav ul
+            {
+                width: 100%;
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0px;
+            }
+        nav ul li 
+        {
+            text-align: center;
+        }
+    }
+.f1
+    {
+        display: flex;
+        border-radius: 5px;
+        background-color: dimgrey;
+        padding: 20px;
+        margin: 10px, 0px;
+    }
+input[type=text], textarea
+    {
+        width: 100%;
+        padding: 12px;
+    }
+.footer
+    {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: antiquewhite;
+        background-color: #352F44;
+        padding: 5px;
+    }
